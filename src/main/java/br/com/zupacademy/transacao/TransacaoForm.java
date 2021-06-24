@@ -24,4 +24,8 @@ public class TransacaoForm {
 				+ estabelecimento + ", cartao=" + cartao + "]";
 	}
 
+	public Transacao toMap() {
+		return new Transacao(id,valor,efetivadaEm,estabelecimento.toMap(),cartao.toMap());
+	}
+
 }

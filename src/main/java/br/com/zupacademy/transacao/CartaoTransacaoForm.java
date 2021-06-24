@@ -14,4 +14,8 @@ public class CartaoTransacaoForm {
 		return "Cartao [id=" + id + ", email=" + email + "]";
 	}
 	
+	public CartaoTransacao toMap() {
+		return new CartaoTransacao(id,email);
+	}
+	
 }

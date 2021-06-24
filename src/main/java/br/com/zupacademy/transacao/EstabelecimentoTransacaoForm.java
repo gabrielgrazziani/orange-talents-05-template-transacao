@@ -15,5 +15,9 @@ public class EstabelecimentoTransacaoForm {
 	public String toString() {
 		return "Estabelecimento [nome=" + nome + ", cidade=" + cidade + ", endereco=" + endereco + "]";
 	}
+	
+	public EstabelecimentoTransacao toMap() {
+		return new EstabelecimentoTransacao(nome,cidade,endereco);
+	}
 
 }
